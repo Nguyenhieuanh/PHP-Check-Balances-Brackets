@@ -6,7 +6,7 @@
 
 Luyện tập sử dụng Stack.
 
-####Nội dung
+#### Nội dung
 
 Trong phần này, chúng ta sẽ sử dụng Stack để kiểm tra tính đúng đắn của các dấu ngoặc trong một biểu thức.
 
