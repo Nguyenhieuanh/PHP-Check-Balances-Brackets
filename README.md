@@ -1,8 +1,8 @@
 # PHP-Check-Balances-Brackets
 
-##[Bài tập] Kiểm tra dấu ngoặc trong biểu thức sử dụng Stack
+## [Bài tập] Kiểm tra dấu ngoặc trong biểu thức sử dụng Stack
 
-####Mục đích
+#### Mục đích
 
 Luyện tập sử dụng Stack.
 
