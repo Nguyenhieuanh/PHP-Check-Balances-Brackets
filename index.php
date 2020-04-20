@@ -3,16 +3,19 @@ function checkBalancesBrackets($string)
 {
     $stack = new SplStack();
     for ($i = 0; $i < strlen($string); $i++) {
-        if ($string[$i] == '(') {
-            $stack->push(1);
-        } elseif ($string[$i] == ')') {
-            if ($stack->isEmpty()) {
-                $stack->push(2);
-            } elseif (!$stack->isEmpty()) {
-                if ($stack->pop() != 1) {
+        switch ($string[$i]) {
+            case '(':
+                $stack->push(1);
+                break;
+            case ')':
+                if ($stack->isEmpty()) {
                     return false;
+                } elseif (!$stack->isEmpty()) {
+                    if ($stack->pop() != 1) {
+                        return false;
+                    }
                 }
-            }
+                break;
         }
     }
     return $stack->isEmpty();
