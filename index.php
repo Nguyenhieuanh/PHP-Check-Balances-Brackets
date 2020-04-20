@@ -10,7 +10,7 @@ function checkBalancesBrackets($string)
             case ')':
                 if ($stack->isEmpty()) {
                     return false;
-                } elseif (!$stack->isEmpty()) {
+                } else {
                     if ($stack->pop() != 1) {
                         return false;
                     }
